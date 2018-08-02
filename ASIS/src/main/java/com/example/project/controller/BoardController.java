@@ -59,7 +59,7 @@ public class BoardController {
 			int count = boardService.countArticle(searchOption, keyword);
 			
 			BoardPager boardPager = new BoardPager(count, curPage);
-			int start = boardPager.getPageBegin();
+			int start = boardPager.getPageBegin()-1;
 			int end = boardPager.getPageEnd();
 			
 			

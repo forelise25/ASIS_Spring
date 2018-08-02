@@ -1,0 +1,24 @@
+nav#mainNav{
+  background-color: #376457;
+  padding:0px;
+  height:60px;
+}
+#mainNav a{
+  font-size: 13pt;
+  color:white;
+  font-weight: lighter;
+  letter-spacing: 1px;;
+}
+#mainNav ul{
+  margin: 0px auto;
+  height: 100%;
+}
+#mainNav ul li{
+  margin: 0px;
+  width:130px;
+  padding-top: 8px;
+}
+#mainNav ul li:hover{
+  transition: all .4s ease-in-out;
+  background-color:#243a39;
+}

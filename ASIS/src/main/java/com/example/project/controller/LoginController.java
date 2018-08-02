@@ -30,7 +30,7 @@ public class LoginController {
 		boolean result = loginService.loginCheck(vo, session);
 		ModelAndView mav = new ModelAndView();
 		if(result==true) {
-			mav.setViewName("login/home");
+			mav.setViewName("index");
 			mav.addObject("msg", "success");
 		}
 		else {

@@ -14,24 +14,6 @@
   background-color: #d9d9d9;
   color:#376457;
 }
-#globalNavLeft {
-  position: absolute;
-  right: 20px;
-}
-
-.globalNav {
-  font-size: 13px;
-  color: black;
-}
-.globalNav li a:hover{
-  color: #376457;
-}
-.nav-link {
-  color: black;
-}
-.nav-link a:hover{
-  color: #376457;
-}
 #loginModalCol, #registerModalCol{
   /*로그인 입력모달의 입력요소들이 축소되어 삽입*/
   flex: 0 0 100%;
@@ -83,30 +65,6 @@ span#mainTitle{
 span#mainTitle:hover{
   text-shadow: 2px 2px 8px #d9d9d9;
   transition: all .2s ease-in-out;
-}
-nav#mainNav{
-  background-color: #376457;
-  padding:0px;
-  height:60px;
-}
-#mainNav a{
-  font-size: 13pt;
-  color:white;
-  font-weight: lighter;
-  letter-spacing: 1px;;
-}
-#mainNav ul{
-  margin: 0px auto;
-  height: 100%;
-}
-#mainNav ul li{
-  margin: 0px;
-  width:130px;
-  padding-top: 8px;
-}
-#mainNav ul li:hover{
-  transition: all .4s ease-in-out;
-  background-color:#243a39;
 }
 .btn-login{
   background-color: #376457;

@@ -12,106 +12,8 @@
   <link rel="stylesheet" href="${path}/resources/css/index.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm bg-white navbar-white">
-    <!-- Links -->
-    <ul class="navbar-nav globalNav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">AS_IS 앱 설치</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">오투잡</a>
-      </li>
-      <li class="nav-item text-right">
-        <a class="nav-link" href="#">고객센터</a>
-      </li>
-    </ul>
-    <!-- Links -->
-    <ul class="navbar-nav globalNav" id="globalNavLeft">
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="modal" data-target="#loginModal">로그인</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="modal" data-target="#registModal">회원가입</a>
-      </li>
-      <!-- Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          개인회원
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">개인회원안내</a>
-          <a class="dropdown-item" href="#">이력서등록</a>
-          <a class="dropdown-item" href="#">입사지원 현황</a>
-          <a class="dropdown-item" href="#">최근 본 공고</a>
-          <a class="dropdown-item" href="#">개인정보 수정</a>
-        </div>
-      </li>
-      <!-- Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          기업회원
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">채용공고등록</a>
-          <a class="dropdown-item" href="#">공고/지원자관리</a>
-          <a class="dropdown-item" href="#">기업정보 수정</a>
-          <a class="dropdown-item" href="#">결제내역 조회</a>
-          <a class="dropdown-item" href="#">유료서비스 안내</a>
-          <a class="dropdown-item" href="#">SIAT인적성검사</a>
-        </div>
-      </li>
-      <li class="nav-item text-right">
-        <a class="nav-link" href="#">알림센터</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="modal" id="loginModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Login ASIS site</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 col-md-offset-4" id="loginModalCol">
-                <div class="panel panel-default">
-                  <div class="panel-body">
-                    <form accept-charset="UTF-8" role="form">
-                      <fieldset>
-                        <div class="form-group">
-                          <input class="form-control" placeholder="yourmail@example.com" name="email" type="text">
-                        </div>
-                        <div class="form-group">
-                          <input class="form-control" placeholder="Password" name="password" type="password" value="">
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                                <input name="remember" type="checkbox" value="Remember Me"> Remember Me
-                              </label>
-                        </div>
-                        <input class="btn btn-lg btn-success btn-block btn-login" type="submit" value="Login">
-                      </fieldset>
-                    </form>
-                    <hr/>
-                    <center>
-                      <h4>OR</h4></center>
-                    <input class="btn btn-lg btn-facebook btn-block" type="submit" value="Login via facebook">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
+  <%@ include file="include/global_nav.jsp" %>
   <!-- The registModal -->
   <div class="modal" id="registModal">
     <div class="modal-dialog">
@@ -206,30 +108,9 @@
       <button class="btn btn-success" id="searchBtn" type="submit">Search</button>
     </form>
   </div>
-
-  <nav class="navbar navbar-expand-sm" id="mainNav" >
-    <!-- Links -->
-    <ul class="navbar-nav">
-      <li class="nav-item text-center" style="vertical-align: middle;">
-        <a class="nav-link" href="#">전체 채용정보</a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link" href="#">직업별</a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link" href="#">지역별</a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link" href="#">연봉정보</a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link" href="#">자료통</a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link" href="#">게시판</a>
-      </li>
-    </ul>
-  </nav>
+	
+  <%@ include file="include/main_nav.jsp" %>
+  
   <div class="container">
     <div class="row">
         <div class="col-sm-4 recruitAnnounceBlock">

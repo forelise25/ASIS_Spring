@@ -1,0 +1,18 @@
+#globalNavLeft {
+  position: absolute;
+  right: 20px;
+}
+
+.globalNav {
+  font-size: 13px;
+  color: black;
+}
+.globalNav li a:hover{
+  color: #376457;
+}
+.nav-link {
+  color: black;
+}
+.nav-link a:hover{
+  color: #376457;
+}
