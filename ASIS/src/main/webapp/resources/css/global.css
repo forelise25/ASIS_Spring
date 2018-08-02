@@ -1,0 +1,6 @@
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+::selection {
+  background-color: #376457;
+ }

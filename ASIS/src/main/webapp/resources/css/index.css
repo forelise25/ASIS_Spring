@@ -1,0 +1,125 @@
+#searchInput {
+  width: 300px;
+  display: inline;
+}
+
+#searchBtn {
+  background-color: #376457;
+  border-color: #376457;
+  color:#FFFFFF;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+}
+#searchBtn:hover {
+  background-color: #d9d9d9;
+  color:#376457;
+}
+#globalNavLeft {
+  position: absolute;
+  right: 20px;
+}
+
+.globalNav {
+  font-size: 13px;
+  color: black;
+}
+.globalNav li a:hover{
+  color: #376457;
+}
+.nav-link {
+  color: black;
+}
+.nav-link a:hover{
+  color: #376457;
+}
+#loginModalCol, #registerModalCol{
+  /*로그인 입력모달의 입력요소들이 축소되어 삽입*/
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.recruitAnnounceBlock{
+  padding-top:15px;
+  padding-bottom:15px;
+}
+.recruitAnnounceBlock > article{
+  padding:30px;
+  border:1px solid #d9d9d9;
+  border-right: 4px solid #d9d9d9;
+  border-bottom: 4px solid #d9d9d9;
+}
+.recruitAnnounceBlock > article:hover{
+  transition: all .2s ease-in-out;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 4px solid #d9d9d9;
+  border-top: 4px solid #d9d9d9;
+}
+.img-responsive{
+  max-width:100%;
+  height:auto;
+  display:block;
+  height:50px;
+}
+.img-wrap{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.dropdown-item{
+  font-size: 9pt;
+}
+.jumbotron{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  color:white;
+  margin: 0px;
+  border-radius: 0px;
+  padding-top:160px;
+}
+span#mainTitle{
+  font-weight:600;
+  font-size: 30pt;
+}
+span#mainTitle:hover{
+  text-shadow: 2px 2px 8px #d9d9d9;
+  transition: all .2s ease-in-out;
+}
+nav#mainNav{
+  background-color: #376457;
+  padding:0px;
+  height:60px;
+}
+#mainNav a{
+  font-size: 13pt;
+  color:white;
+  font-weight: lighter;
+  letter-spacing: 1px;;
+}
+#mainNav ul{
+  margin: 0px auto;
+  height: 100%;
+}
+#mainNav ul li{
+  margin: 0px;
+  width:130px;
+  padding-top: 8px;
+}
+#mainNav ul li:hover{
+  transition: all .4s ease-in-out;
+  background-color:#243a39;
+}
+.btn-login{
+  background-color: #376457;
+  border-color: #376457;
+}
+.btn-login:hover{
+  transition: all .2s ease-in-out;
+  background-color:#243a39;
+  border-color:#243a39;
+}
+.modal-title{
+  font-weight: bold;
+}
+.btn-facebook{
+  background-color: #d9d9d9;
+}
