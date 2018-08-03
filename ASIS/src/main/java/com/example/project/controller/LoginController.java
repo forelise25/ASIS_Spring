@@ -41,11 +41,11 @@ public class LoginController {
 	}
 	
 	@RequestMapping("logout.do")
-	public ModelAndView logout(HttpSession session) {
+	public String logout(HttpSession session) {
 		loginService.logout(session);
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("login/login");
-		mav.addObject("msg","logout");
-		return mav;
+		//ModelAndView mav = new ModelAndView();
+		return "main.do";
+		//mav.addObject("msg","logout");
+		//return mav;
 	}
 }

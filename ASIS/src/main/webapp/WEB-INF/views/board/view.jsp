@@ -110,6 +110,17 @@ function changeDate(date){
 	strDate = year+"-"+month+"-"+day+"  "+hour+":"+minute+":"+second;
 	return strDate;
 }
+function showReplyModify(rno){
+    $.ajax({
+        type: "get",
+        url: "${path}/reply/detail/"+rno,
+        success: function(result){
+            $("#modifyReply").html(result);
+            // 태그.css("속성", "값")
+            $("#modifyReply").css("visibility", "visible");
+        }
+    })
+}
 </script>
 <style>
 form div{
@@ -124,8 +135,9 @@ span{
 </head>
 <body>
 <%@ include file="../include/global_nav.jsp" %>
+<%@ include file="../include/main_header.jsp" %>
 <%@ include file="../include/main_nav.jsp" %>
-<div class="container">
+<div class="container" style="width:800px;">
  <h2>게시글 보기</h2>
  <form name="form1" method="post">
  	<div>

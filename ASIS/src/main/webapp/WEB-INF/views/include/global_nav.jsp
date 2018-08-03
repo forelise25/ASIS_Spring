@@ -20,7 +20,7 @@
         <a class="nav-link" href="login/login.do">${sessionScope.userName}님 반갑습니다</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login/login.do">마이페이지</a>
+        <a class="nav-link" href="login/logout.do">로그아웃</a>
       </li>
 	</c:if>
 	<c:if test="${sessionScope.userId == null}">

@@ -20,8 +20,9 @@ span{
 </head>
 <body>
 <%@ include file="../include/global_nav.jsp" %>
+<%@ include file="../include/main_header.jsp" %>
 <%@ include file="../include/main_nav.jsp" %>
-<div class="container" style="width:50%;"> 
+<div class="container" style="width:800px;"> 
 <%@ include file="../login/sessionCheck.jsp" %>
 <h2>게시글 작성</h2>
 <form name="form1" method="post" action="${path}/board/insert.do">

@@ -10,10 +10,15 @@ import com.example.project.model.dao.ReplyDAO;
 import com.example.project.model.dto.ReplyVO;
 
 @Service
-public class ReplyServiceImpl implements ReplyService {
-
+public class ReplyServiceImpl implements ReplyService{
+ 
 	@Inject
 	ReplyDAO replyDao;
+	
+	public ReplyVO detail(int rno) {
+		return replyDao.detail(rno);
+	}
+	
 	
 	@Override
 	public List<ReplyVO> list(int bno) {
@@ -25,18 +30,19 @@ public class ReplyServiceImpl implements ReplyService {
 	public void create(ReplyVO vo) {
 		// TODO Auto-generated method stub
 		replyDao.create(vo);
+		
 	}
 
 	@Override
 	public void update(ReplyVO vo) {
 		// TODO Auto-generated method stub
-		
+		replyDao.update(vo);
 	}
 
 	@Override
 	public void delete(int rno) {
 		// TODO Auto-generated method stub
-		
+		replyDao.delete(rno);
 	}
 
 }

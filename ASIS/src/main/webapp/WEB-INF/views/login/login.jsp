@@ -30,7 +30,8 @@
 <body>
 
 <%@ include file="../include/global_nav.jsp" %>
-<div class="container">
+<%@ include file="../include/main_header.jsp" %>
+<div class="container" style="width:800px;">
             <div class="row">
               <div class="col-md-4 col-md-offset-4" id="loginModalCol">
                 <div class="panel panel-default">

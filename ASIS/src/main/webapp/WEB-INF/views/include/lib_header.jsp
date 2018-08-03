@@ -14,6 +14,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   
   <link rel="stylesheet" type="text/css" href="${path}/resources/css/global.css">
+  <link rel="icon" href="${path}/resources/images/favicon.jpg" type="image/jpg" sizes="16x16">  
 </head>
 
 
